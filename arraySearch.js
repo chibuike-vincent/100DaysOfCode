@@ -1,8 +1,3 @@
-
-
-
-
-
 //Day 4
 // Searching through Array
 // To do this we are going to use indexOf 
