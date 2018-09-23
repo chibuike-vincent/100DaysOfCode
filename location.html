@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Location</title>
+</head>
+<body>
+  <div>
+    <h3> Enter an adress and press the button</h3>
+
+   <input id="address" type="text" placeholder="Enter address here" />
+   <button id="btn">Get LatLong</button>
+   <div>
+       <p>Latitude:
+           <input type="text" id="lat" readonly />
+       </p>
+       <p>Longitude:
+           <input type="text" id="long" readonly />
+       </p>
+   </div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false "></script>
+<script src="Location.js"></script>
+</body>
+</html>
