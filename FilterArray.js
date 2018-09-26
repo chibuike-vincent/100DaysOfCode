@@ -24,6 +24,8 @@ const findCountry = function (country, query){
 
 console.log(findCountry(country, 'asia'))
 
+
+
 //OUTPUT
 
 // (1) […]
