@@ -1,0 +1,117 @@
+<!-- Welcome back to my hundred days of code. Sorry I had a serious problem with my system that I had to had to fix. Thank God am done with it and hopefully we gonno ride on this to the end this time.
+	I would like to start from the fresh and that is CSS.
+
+What is CSS?
+CSS means cascading style sheet which is a collection of rules. Each rule targets a specific tag or element on a HTML document. This rule for example targets all “p” tags on a page, targets all tags with an #id or .class and also targets all “a” tags in the #nav.
+All css rules come in 2 parts which are the SELECTOR and the DECLARATION. The Selector could be the tag, #id or .class {#header p, .comment div, li, a, h1 etc}while the Declaration could be the properties and values {font-size:24px, backgroung-color: #000000, margin-left: 10px etc}. Examples -->
+
+#container {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+}   
+
+.app-header {
+	height: 20px;
+	font-size: 32px;
+	color: white;
+}
+
+div {
+    background-color: gray;
+    font-style: italic;
+}
+<!-- 
+Ways of applying styles in CSS
+-Inline style
+-Embedded style sheet
+-External style sheet
+
+Inline styling :- this is when you apply styles directly on the tag within the same HTML file. Example; -->
+<body style = “ backgroung-color:red, top: 0, bottom: 0 “>
+	<div>
+	<h2 style = “ font-style: italic, color: green“>Hello World!</h2>
+	<p style = “ font-size: 15px, text-decoration:underline>This is the basic of CSS</p>	
+	</div>
+</body>
+<!-- Disadvantages of inline styling
+- Time consuming to style multiple elements
+- Tricky to manage and update
+- It is always messy
+Advantage
+- Good for very specialised rules
+
+Embedded;
+although still inside the same HTML file but not directly onto the the tag. This works with IDs and CLASSES. Example; -->
+
+<body>
+	<div>
+	<h2 id = “hello“>Hello World!</h2>
+	<p class = “basic” >This is the basic of CSS</p>	
+	</div>
+
+<style>
+body {
+	backgroung-color: red; 
+	top: 0;
+	bottom: 0 ;
+}
+#hello {
+	font-style: italic; 
+	color: green
+}
+.basic {
+	font-size: 15px;
+	text-decoration:underline;
+}
+</style>
+</body>
+<!-- 
+Disadvantages of Embedded styling
+- Time consuming to apply global styles
+- Hard to maintain and update
+Advantage
+- Good for making a specific page style
+
+Now the third method is the external style sheet where an external file is being created for styling and imported into the HTML file. It also uses the id, class or tag to apply styles. It is much easier and faster and the css file can be used for multiple html files. Like htmls files having extension of .html, css files are named with .css extension. Example,
+
+This is our html file ----- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel = “stylesheet” type = “text/css” href = “filePath/fileName.css”>
+  <title>Freestyle</title>
+</head>
+<body>
+ 
+    <div class = "submain">
+
+    </div>
+    <div id ="submain1">
+    </div>
+</body>
+</html>
+
+<!-- This is our css file ---- index.css -->
+
+    body {
+
+      background-color: blue;
+      display: flex;
+    }
+   
+    .submain {
+      width: 20%;
+      height: 100vh;
+      background-color: green
+    }
+    #submain1 {
+      width: 80%;
+      height: 100vh;
+      background-color: red
+    }
+  <!-- There are so much to learn about CSS but as the coding days evolve we gonno be seeing more of the things you can do with css. If this was helpful, a little response. -->
