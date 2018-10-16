@@ -1,0 +1,30 @@
+h2 {
+  font-size: 30px;
+  color: blue;
+}
+
+#header {
+  font-style: italic;
+  text-transform: capitalize;
+  text-decoration: underline;
+  text-shadow: fuchsia;
+  color:red;
+}
+
+.tit {
+  position: relative;
+  float: right;
+  color: purple;
+  background-color: darkblue;
+}
+
+.demo {
+  color: green;
+  font-style: italic;
+  text-decoration: wavy;
+}
+
+#jealous {
+  font-size: 20px;
+  
+}

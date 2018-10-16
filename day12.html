@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Day12</title>
+  <style>
+    body {
+      color: yellow;
+      font-size: 20;
+      font-weight:bold
+    }
+
+     div{
+      color:purple;
+      font-family: sans serif;
+    }
+    a{
+    color: blue;
+    text-decoration: underline;
+  }
+  #overide {
+    color: yellow; 
+    text-decoration: none;
+  }
+  #main-content p {
+    color:yellow;
+  } 
+  p {
+    color:blue;
+  }
+  </style>
+</head>
+<body>
+  <div>
+    <p>Text</p>
+  </div>
+  <h1>Text</h1>
+  <a id = "overide" href = "#">Click me</a>
+
+  <div class = "specificity">
+    <div id = "main-content">
+      <p>Text</P>
+      <p>Text</P>
+    </div>
+    <p>Text</P>
+    <p>Text</P>
+    <p>Text</P>
+  </div>
+</body>
+</html>
